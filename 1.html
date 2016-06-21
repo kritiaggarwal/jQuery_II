@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Assignment 1</title>
+	<!-- Attach a click and double-click event to the <p> element -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			/*$("#clickk").click(function(){
+				$("p").append("<p>This is click event.</p>");
+			});
+			$("#clickk").dblclick(function(){
+				$("p").append("<p>This is double click event.</p>");
+			}); */
+				$("p").bind("dblclick", function(){  
+				  $( "<p>This is a double-click Event</p>"  ).appendTo( "body" );  
+				}); 
+				$("p").bind("click", function(){  
+				   $( "<p>This is a click Event</p>").appendTo( "body" );  
+				});  
+				
+		});
+	</script>
+</head>
+<body>
+	<p id="clickk">Click me!</p>
+</body> 
+</body>
+</html>
